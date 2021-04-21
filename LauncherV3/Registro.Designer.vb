@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Registro
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,8 +20,9 @@ Partial Class Registro
     'OBSERVAÇÃO: o procedimento a seguir é exigido pelo Windows Form Designer
     'Pode ser modificado usando o Windows Form Designer.  
     'Não o modifique usando o editor de códigos.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim PictureBox1 As System.Windows.Forms.PictureBox
         Me.NsTheme1 = New LauncherV3.NSTheme()
         Me.txt_status = New System.Windows.Forms.Label()
@@ -39,6 +40,8 @@ Partial Class Registro
         Me.senha = New LauncherV3.NSLabel()
         Me.txt_user = New LauncherV3.NSTextBox()
         Me.user = New LauncherV3.NSLabel()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.NsTheme1.SuspendLayout()
@@ -47,7 +50,7 @@ Partial Class Registro
         'PictureBox1
         '
         PictureBox1.Image = Global.LauncherV3.My.Resources.Resources.wave2
-        PictureBox1.Location = New System.Drawing.Point(766, 392)
+        PictureBox1.Location = New System.Drawing.Point(0, 23)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New System.Drawing.Size(800, 427)
         PictureBox1.TabIndex = 13
@@ -130,6 +133,7 @@ Partial Class Registro
         '
         'btn_register
         '
+        Me.btn_register.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_register.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.btn_register.Location = New System.Drawing.Point(0, 414)
         Me.btn_register.Name = "btn_register"
@@ -164,6 +168,7 @@ Partial Class Registro
         'txt_hwid
         '
         Me.txt_hwid.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txt_hwid.Enabled = False
         Me.txt_hwid.Location = New System.Drawing.Point(325, 286)
         Me.txt_hwid.MaxLength = 32767
         Me.txt_hwid.Multiline = False
@@ -211,6 +216,7 @@ Partial Class Registro
         '
         'btn_verify
         '
+        Me.btn_verify.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btn_verify.Location = New System.Drawing.Point(580, 89)
         Me.btn_verify.Name = "btn_verify"
         Me.btn_verify.Size = New System.Drawing.Size(75, 23)
@@ -265,6 +271,13 @@ Partial Class Registro
         Me.user.Value1 = "*"
         Me.user.Value2 = "USER:"
         '
+        'Timer1
+        '
+        '
+        'Timer2
+        '
+        Me.Timer2.Interval = 200
+        '
         'Registro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -298,4 +311,6 @@ Partial Class Registro
     Friend WithEvents NsControlButton1 As NSControlButton
     Friend WithEvents NsControlButton2 As NSControlButton
     Friend WithEvents txt_status As Label
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents Timer2 As Timer
 End Class
