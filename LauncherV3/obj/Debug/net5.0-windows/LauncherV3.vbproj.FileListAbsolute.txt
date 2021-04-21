@@ -25,3 +25,4 @@ C:\Users\Utilizador\source\repos\LauncherV3\LauncherV3\obj\Debug\net5.0-windows\
 C:\Users\Utilizador\source\repos\LauncherV3\LauncherV3\obj\Debug\net5.0-windows\LauncherV3.genruntimeconfig.cache
 C:\Users\Utilizador\source\repos\LauncherV3\LauncherV3\bin\Debug\net5.0-windows\System.Management.dll
 C:\Users\Utilizador\source\repos\LauncherV3\LauncherV3\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.0\System.Management.dll
+C:\Users\Utilizador\source\repos\LauncherV3\LauncherV3\obj\Debug\net5.0-windows\LauncherV3.Downloader.resources
